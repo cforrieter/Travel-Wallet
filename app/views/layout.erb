@@ -17,9 +17,16 @@
 </head>
 <body>
   <nav class="container-fluid">
-    <div class='container'>
-      <%= yield %>
+    <div>
+      <a href="/">Travel Wallet</a>
     </div>
+    <ul>
+      <li><a href="/login">Log in</a></li>
+      <li><a href="/users/new">Sign Up</a></li>
+    </ul>
   </nav>
+  <div id="main">
+    <%= yield %>
+  </div>
 </body>
 </html>
