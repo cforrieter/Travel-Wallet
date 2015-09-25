@@ -136,15 +136,15 @@
     </div>
       <nav class="container-fluid">
         <div>
-          <a href="/">Travel Wallet</a>
+          <button type="button" class="btn btn-link" href="/">Travel Wallet</button>
         </div>
         <ul>
           <li>
             <div class="container"> 
               <% unless current_user %>
-                <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
+                <button class="btn btn-default btn-md pull-right" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</button>
               <% else %>
-                <a class="btn btn-primary btn-lg" href="/logout">Log out I guess</a>
+                <a class="btn btn-primary btn-md pull-left" href="/logout">Log out I guess</a>
               <% end%>          
             </div>
         </li>

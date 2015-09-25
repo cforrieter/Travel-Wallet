@@ -48,6 +48,18 @@ nav .brand {float: left;}
   transform: translateY(-50);
 }
 
+.jumbotron header h1 {
+  font-size: 3em; 
+  margin: 0; 
+  text-transform: 
+  uppercase; 
+  color: rgb(255,255,255);
+}
+
+.jumbotron header p {
+  color: rgb(255,255,255);
+}
+
 .row:after {
   content: "";
   display: table;
