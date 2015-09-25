@@ -37,9 +37,11 @@ post '/login' do
  email = params[:email]
  password = params[:password]
 
- user = User.find_by(email: email, password: password)
+ user = User.find_by(email: email)
 
- if user
+ password_hash = BCrypt::Password.new(user.password_hash) if user
+
+ if user && password_hash == password
    session[:user_id] = user.id
    redirect "/users/#{user.id}"
  else
@@ -58,10 +60,17 @@ post '/user/new' do
  @user = User.create(
    email: params[:email], 
    name: params[:name], 
-   password: params[:password])
- if @user.save
-   redirect '/users/:slug'
- end
+   password: BCrypt::Password.create(params[:password])
+  
+  user = User.create(name: name, email: email, password_hash: password)
+
+  if user
+    session[:user_id] = user.id
+    redirect '/'
+  else
+    session[:error] = "Your sign up information is incorrect"
+    redirect '/users/news'
+  end
 end
 
 
