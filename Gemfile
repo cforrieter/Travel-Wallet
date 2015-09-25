@@ -16,6 +16,7 @@ gem 'carrierwave'
 
 group :development, :test do
   gem 'pry'
+  gem 'pry-nav'
   gem 'shotgun'
-  gem 'sqlite3'
+  gem 'pg'
 end
