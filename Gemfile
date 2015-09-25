@@ -11,12 +11,11 @@ gem 'sinatra-activerecord'
 gem 'puma'
 gem 'tux'
 
-gem 'devise'
 gem 'carrierwave'
 
 group :development, :test do
   gem 'pry'
-  gem 'pry-nav'
+  # gem 'pry-nav'
   gem 'shotgun'
   gem 'pg'
 end
