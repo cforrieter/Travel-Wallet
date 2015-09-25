@@ -3,6 +3,15 @@ get '/' do
   erb :index
 end
 
+get '/users/new' do
+  erb :'/users/new'
+end
+
+post '/user/new' do
+  @user = User.new(
+    email: params[:email])
+end
+
 
 get '/login' do
   erb :login
