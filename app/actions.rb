@@ -57,20 +57,7 @@ end
 
 # Create and save new user
 post '/user/new' do
- @user = User.create(
-   email: params[:email], 
-   name: params[:name], 
-   password: BCrypt::Password.create(params[:password])
-  
-  user = User.create(name: name, email: email, password_hash: password)
 
-  if user
-    session[:user_id] = user.id
-    redirect '/'
-  else
-    session[:error] = "Your sign up information is incorrect"
-    redirect '/users/news'
-  end
 end
 
 
@@ -85,6 +72,7 @@ end
 # before filter => if not logged in, redirect to 401
 
 get '/' do
+  session[:user_id] = 1
   erb :index
 end
 
@@ -94,6 +82,7 @@ get '/users/:id' do |id|
 end
 
 get '/category/:id' do |id|
+  # binding.pry
   @category = Category.find(id)
   erb :'/category/show'
 end
@@ -116,7 +105,6 @@ post '/category/create' do
   category.name = params[:name]
   category.user = User.find(session[:user_id])
   category.save!
-
   redirect "/users/#{session[:user_id]}"
 end
 

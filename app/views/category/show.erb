@@ -1,21 +1,17 @@
   <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data">
     <input type="file" name="files[]" multiple>
-    
-    
-    
-    
-    
     <button class="btn waves-effect waves-light" type="submit" name="action">Add file
     </button>
   </form>
 
   
 <div class="documents">
-
   <% @category.documents.each do |doc| %>
   <div class="file col-sm-3">
     <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
-    <a href="<%= doc.file %>"><%= File.basename(doc['file']) %></a>
+
+    <h5 class="doc_file"><%= doc.file %></h5>
+    
   </div>
   <% end %>
 </div>

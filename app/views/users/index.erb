@@ -1,6 +1,6 @@
 <h1><%= @user.first_name %></h1>
 <% @user.categories.each do |category| %>
-  <div><a href="/category/<%= category.id %>"><%= category.name %></a></div>
+  <div class="category-box"> <a href="/category/<%= category.id %>"><%= category.name %></a></div>
 <% end %>
 
 <form action="/category/create" method="POST">
