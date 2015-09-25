@@ -26,6 +26,8 @@
       <title>Travel Wallet</title>
     </head>
     <body>
+
+
     <!-- Button trigger modal -->
     <!-- Modal -->
     <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -77,24 +79,35 @@
                 </form>
             </div>
             <div class="tab-pane fade" id="signup">
-                <form class="form-horizontal">
+                <form class="form-horizontal" method="POST" action="/users/new">
                 <fieldset>
                 <!-- Sign Up Form -->
+                
+                <!-- Text input-->
+                <div class="control-group">
+                  <label class="control-label" for="first_name">First Name:</label>
+                  <div class="controls">
+                    <input id="first_name" name="first_name" class="form-control" type="text" placeholder="John" class="input-large" required="">
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="control-group">
+                  <label class="control-label" for="last_name">Last Name:</label>
+                  <div class="controls">
+                    <input id="last_name" name="last_name" class="form-control" type="text" placeholder="Smith" class="input-large" required="">
+                  </div>
+                </div>
+
+
                 <!-- Text input-->
                 <div class="control-group">
                   <label class="control-label" for="Email">Email:</label>
                   <div class="controls">
-                    <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                    <input id="Email" name="email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
                   </div>
                 </div>
                 
-                <!-- Text input-->
-                <div class="control-group">
-                  <label class="control-label" for="userid">Alias:</label>
-                  <div class="controls">
-                    <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
-                  </div>
-                </div>
                 
                 <!-- Password input-->
                 <div class="control-group">
@@ -118,7 +131,7 @@
                 <div class="control-group">
                   <label class="control-label" for="confirmsignup"></label>
                   <div class="controls">
-                    <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                    <button id="confirmsignup" name="confirmsignup" type="submit" class="btn btn-success">Sign Up</button>
                   </div>
                 </div>
                 </fieldset>
@@ -139,13 +152,13 @@
           <a href="/" class="btn btn-lg pull-left">Travel Wallet</a>
         </div>
         
-            <div class="container"> 
-              <% unless current_user %>
-                <a class="btn btn-lg pull-right" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</a>
-              <% else %>
-                <a class="btn btn-primary btn-md pull-left" href="/logout">Log out I guess</a>
-              <% end%>          
-            </div>
+             
+          <% unless current_user %>
+            <a class="btn btn-lg pull-right" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</a>
+          <% else %>
+            <a class="btn btn-lg btn-md pull-right" href="/logout"><%= @user.first_name %> | Log out</a>
+          <% end%>          
+        
         
       </nav>
 

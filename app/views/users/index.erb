@@ -1,18 +1,24 @@
-<h1><%= @user.first_name %>'s categories</h1>
-<% @user.categories.each do |category| %>
-  <div><a href="/category/<%= category.id %>"><%= category.name %></a></div>
-<% end %>
+<h1><%= @the_user.first_name %>'s categories</h1>
+<% if @user.id == @the_user.id %>
+  <% @the_user.categories.each do |category| %>
+    <div><a href="/category/<%= category.id %>"><%= category.name %></a></div>
+  <% end %>
 
-<form action="/category/create" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">New category name</label>
-    <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Name">
-  </div>
-  <button type="submit" class="btn btn-default">New Category</button>
-</form>
+  <form action="/category/create" method="POST">
+    <div class="form-group">
+      <label for="exampleInputEmail1">New category name</label>
+      <input type="text" class="form-control" name="name" id="exampleInputEmail1" placeholder="Name">
+    </div>
+    <button type="submit" class="btn btn-default">New Category</button>
+  </form>
 
-<% @user.shares.each do |share| %>
-  <div>
-    <a href="/users/<%= User.find(share.category.user_id).id %>"><%= User.find(share.category.user_id).first_name %></a>
-  </div>
+  <% @the_user.shares.each do |share| %>
+    <div>
+      <a href="/users/<%= User.find(share.category.user_id).id %>"><%= User.find(share.category.user_id).first_name %></a>
+    </div>
+  <% end %>
+<% else %>
+  <% @user.shares.each do |share| %>
+    <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
+  <% end %>  
 <% end %>
