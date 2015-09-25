@@ -10,3 +10,7 @@
   </div>
   <button type="submit" class="btn btn-default">New Category</button>
 </form>
+
+<% @user.shares.each do |share| %>
+  <div><a href="/users/<%= User.find(share.category.user_id) %>"><%= User.find(share.category.user_id).first_name %></a></div>
+<% end %>

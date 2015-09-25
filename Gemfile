@@ -11,7 +11,6 @@ gem 'sinatra-activerecord'
 gem 'puma'
 gem 'tux'
 
-gem 'devise'
 gem 'carrierwave'
 
 group :development, :test do
