@@ -1,4 +1,65 @@
+helpers do
 
+ def current_user
+   @user = User.find(session[:user_id]) if session[:user_id]
+ end
+
+ def get_error
+   if session[:error]
+     @error = session[:error]
+     session[:error] = nil
+   end
+ end
+end
+
+before do
+ current_user
+ get_error
+end
+
+
+# login page
+get '/login' do
+ erb :login
+end
+
+# Login varificaton
+post '/login' do
+ email = params[:email]
+ password = params[:password]
+
+ user = User.find_by(email: email, password: password)
+
+ if user
+   session[:user_id] = user.user_id
+ else
+   session[:error] = "Your log in information is incorrect"
+   redirect '/users/new'
+ end
+end
+
+# user page retrieve
+get '/users/new' do
+ erb :'users/new'
+end
+
+# Create and save new user
+post '/user/new' do
+ @user = User.create(
+   email: params[:email], 
+   name: params[:name], 
+   password: params[:password])
+ if @user.save
+   redirect '/users/:slug'
+ end
+end
+
+
+# exit session and user log out
+get '/logout' do
+ session.clear
+ redirect '/users/:slug'
+end
 
 # Homepage (Root path)
 
@@ -10,10 +71,6 @@ get '/' do
   erb :index
 end
 
-
-get '/login' do
-  erb :login
-end
 
 get '/users/:id' do |id|
   @user = User.find(id)
