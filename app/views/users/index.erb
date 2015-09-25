@@ -1,4 +1,4 @@
-<h1><%= @user.first_name %></h1>
+<h1><%= @user.first_name %>'s categories</h1>
 <% @user.categories.each do |category| %>
   <div><a href="/category/<%= category.id %>"><%= category.name %></a></div>
 <% end %>
@@ -12,5 +12,7 @@
 </form>
 
 <% @user.shares.each do |share| %>
-  <div><a href="/users/<%= User.find(share.category.user_id) %>"><%= User.find(share.category.user_id).first_name %></a></div>
+  <div>
+    <a href="/users/<%= User.find(share.category.user_id).id %>"><%= User.find(share.category.user_id).first_name %></a>
+  </div>
 <% end %>

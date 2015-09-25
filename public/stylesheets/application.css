@@ -48,23 +48,15 @@ nav .brand {float: left;}
   transform: translateY(-50);
 }
 
-.row:after {
+.row:before {
   content: "";
   display: table;
   clear: both;
 }
-.row .col-1 {
-  background: rgb(220, 220, 220);
-  float: left;
-  margin-top: 25em;
-  margin-left: : 10%;
-  width: 30.67%;
-}
 
 
 #main {
-  margin-top: 10em;
-  max-width: 60em;
+  margin-top: 25em;
   padding:1em 1em 10em;
 }
 
