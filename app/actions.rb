@@ -40,7 +40,8 @@ post '/login' do
  user = User.find_by(email: email, password: password)
 
  if user
-   session[:user_id] = user.user_id
+   session[:user_id] = user.id
+   redirect "/users/#{user.id}"
  else
    session[:error] = "Your log in information is incorrect"
    redirect '/users/new'
@@ -67,7 +68,7 @@ end
 # exit session and user log out
 get '/logout' do
  session.clear
- redirect '/users/:slug'
+ redirect '/'
 end
 
 # Homepage (Root path)
@@ -75,15 +76,12 @@ end
 # before filter => if not logged in, redirect to 401
 
 get '/' do
-  # TODO
-  session[:user_id] = 1
   erb :index
 end
 
-
 get '/users/:id' do |id|
   @user = User.find(id)
-  erb :'user/index'
+  erb :'users/index'
 end
 
 get '/category/:id' do |id|
@@ -113,3 +111,9 @@ post '/category/create' do
   redirect "/users/#{session[:user_id]}"
 end
 
+post '/shares/:id/create' do |id|
+  @share = Share.new
+  @share.user = User.find_by(email: params[:email])
+  @share.category = Category.find(id)
+  @share.save
+end
