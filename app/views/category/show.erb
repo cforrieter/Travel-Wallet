@@ -1,0 +1,18 @@
+  <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" name="files[]" multiple>
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Add file
+    </button>
+  </form>
+<div>
+  <% @category.documents.each do |doc| %>
+    <a href="<%= doc.file %>"><%= doc['file'] %></a>
+  <% end %>
+</div>
