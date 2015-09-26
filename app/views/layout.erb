@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  
-  <link rel="stylesheet" href="/stylesheets/normalize.css">
-  <!--
-    application.css is where you put your styles
-  -->
-  <link rel="stylesheet" href="/stylesheets/application.css">
-  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <html lang="en">
+    <head>
+      
+      <link rel="stylesheet" href="/stylesheets/normalize.css">
+      <!--
+        application.css is where you put your styles
+      -->
+      <link rel="stylesheet" href="/stylesheets/application.css">
+       <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="/javascript/application.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+              
+
+      <title>Travel Wallet</title>
+    </head>
+    <body>
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <%= erb :'/users/_login_modal' %>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/javascript/application.js"></script>
+      <div id="main">
+        <%= yield %>
+      </div>
 
-  <title>Travel Wallet</title>
-</head>
-<body>
-  <nav class="container-fluid">
-    <div class="brand">
-      <a href="/">Travel Wallet</a>
-    </div>
-    <div class="login">
-      <a href="/login"data-toggle="modal" data-target="#login-modal">Log in</a>
-    </div>
-  </nav>
-  <div id="main">
-    <%= yield %>
-  </div>
-</body>
-</html>
+    </body>
+  </html>
+
+

@@ -1,0 +1,3160 @@
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+66
+In total, you will be able to drink 127 bottles of soda. Mmm diabetes.
+	33 of those bottles came from your initial purchase.
+	63 of those bottles came from recycling your empty bottles.
+	31 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+66
+In total, you will be able to drink 127 bottles of soda. Mmm diabetes.
+	33 of those bottles came from your initial purchase.
+	63 of those bottles came from recycling your empty bottles.
+	31 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+pop_bottle.rb:6:in `redeem_bottles': undefined local variable or method `bottles_to_drink' for main:Object (NameError)
+	from pop_bottle.rb:29:in `calculate_total_bottles'
+	from pop_bottle.rb:38:in `main_prompt'
+	from pop_bottle.rb:48:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+pop_bottle.rb:10:in `redeem_bottles': undefined method `+' for nil:NilClass (NoMethodError)
+	from pop_bottle.rb:29:in `calculate_total_bottles'
+	from pop_bottle.rb:38:in `main_prompt'
+	from pop_bottle.rb:48:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+
+pop_bottle.rb:32:in `calculate_total_bottles': undefined local variable or method `total' for main:Object (NameError)
+	from pop_bottle.rb:40:in `main_prompt'
+	from pop_bottle.rb:50:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+35
+pop_bottle.rb:32:in `calculate_total_bottles': undefined local variable or method `total' for main:Object (NameError)
+	from pop_bottle.rb:40:in `main_prompt'
+	from pop_bottle.rb:50:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+35
+pop_bottle.rb:32:in `calculate_total_bottles': undefined local variable or method `total' for main:Object (NameError)
+	from pop_bottle.rb:40:in `main_prompt'
+	from pop_bottle.rb:50:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 1 bottles of soda. Mmm diabetes.
+	1 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	1 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+pop_bottle.rb:42:in `main_prompt': undefined method `[]' for nil:NilClass (NoMethodError)
+	from pop_bottle.rb:50:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+pop_bottle.rb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+  hase, total_empty_bottles, total_bottlecaps]
+      ^
+pop_bottle.rb:32: syntax error, unexpected ']', expecting '='
+pop_bottle.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+main_prompt
+           ^
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+pop_bottle.rb:29:in `calculate_total_bottles': undefined local variable or method `initial_purchase' for main:Object (NameError)
+	from pop_bottle.rb:38:in `main_prompt'
+	from pop_bottle.rb:48:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+10
+In total, you will be able to drink 20 bottles of soda. Mmm diabetes.
+	5 of those bottles came from your initial purchase.
+	10 of those bottles came from recycling your empty bottles.
+	5 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 10 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	5 of those bottles came from recycling your empty bottles.
+	2 of those bottles came from recycling your bottlecaps.
+
+	You still have 0 empty bottles left!.
+	You still have 2 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb 
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   binding.pry
+    27:   return if bottles === 0
+    28:   @empty_bottles += bottles
+    29:   @bottlecaps += bottles
+    30: 
+    31:   free = redeem_empties
+    32:   free += redeem_bottlecaps
+    33:   @total += free
+    34: 
+    35:   calculate_total_bottles(free)
+    36: end
+
+[1] pry(main)> next
+SyntaxError: (eval):2: Can't escape from eval with next
+[1] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):1:in `calculate_total_bottles'
+[2] pry(main)> ls
+self.methods: inspect  to_s
+instance variables: @bottlecaps  @empty_bottles  @total  @total_bottlecaps  @total_empty_bottles
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  bottles  free
+[3] pry(main)> pry.next
+[1] pry(main)> pry.next
+[1] pry(main)> 
+[2] pry(main)> ls
+self.methods: inspect  to_s
+instance variables: @bottlecaps  @empty_bottles  @total  @total_bottlecaps  @total_empty_bottles
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
+[3] pry(main)> exit
+NoMethodError: undefined method `next' for nil:NilClass
+from (pry):2:in `<main>'
+[2] pry(main)> quit
+NoMethodError: undefined method `next' for nil:NilClass
+from (pry):2:in `calculate_total_bottles'
+[4] pry(main)> ls
+self.methods: inspect  to_s
+instance variables: @bottlecaps  @empty_bottles  @total  @total_bottlecaps  @total_empty_bottles
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  bottles  free
+[5] pry(main)> next(1)
+SyntaxError: (eval):2: Can't escape from eval with next
+[5] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):4:in `calculate_total_bottles'
+[6] pry(main)> step(1)
+NoMethodError: undefined method `step' for main:Object
+from (pry):5:in `calculate_total_bottles'
+[7] pry(main)> continue
+NameError: undefined local variable or method `continue' for main:Object
+from (pry):6:in `calculate_total_bottles'
+[8] pry(main)> ls              
+self.methods: inspect  to_s
+instance variables: @bottlecaps  @empty_bottles  @total  @total_bottlecaps  @total_empty_bottles
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_  bottles  free
+[9] pry(main)> 
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> 
+[1] pry(main)> 
+[1] pry(main)> 
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> 
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> exit
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> quit
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> exit
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> quit
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> 
+[2] pry(main)> end
+SyntaxError: unexpected keyword_end, expecting end-of-input
+[2] pry(main)> 
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> 
+[1] pry(main)> 
+[1] pry(main)> 
+[1] pry(main)> 
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 26 Object#calculate_total_bottles:
+
+    25: def calculate_total_bottles(bottles)
+ => 26:   return if bottles === 0
+    27:   @empty_bottles += bottles
+    28:   @bottlecaps += bottles
+    29: 
+    30:   free = redeem_empties
+    31:   free += redeem_bottlecaps
+    32:   @total += free
+    33: 
+    34:   calculate_total_bottles(free)
+    35: end
+
+[1] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ls
+pop_bottle copy.rb  pop_bottle.rb
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+[1] pry(main)> 
+[2] pry(main)>  
+[2] pry(main)> 
+[2] pry(main)> 
+pop_bottle.rb:38:in `calculate_totals': private method `binding' called for nil:NilClass (NoMethodError)
+	from pop_bottle.rb:51:in `main_prompt'
+	from pop_bottle.rb:61:in `<main>'
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 38 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+ => 38:   binding.pry
+    39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> n
+NameError: undefined local variable or method `n' for main:Object
+from (pry):1:in `calculate_totals'
+[2] pry(main)> s
+NameError: undefined local variable or method `s' for main:Object
+from (pry):2:in `calculate_totals'
+[3] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):3:in `calculate_totals'
+[4] pry(main)> next
+SyntaxError: (eval):2: Can't escape from eval with next
+[4] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):4:in `calculate_totals'
+[5] pry(main)> 
+[5] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 38 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+ => 38:   binding.pry
+    39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> pry.step
+[1] pry(main)> 
+[2] pry(main)> 
+[3] pry(main)> ls
+self.methods: inspect  to_s
+instance variables: @bottlecaps  @empty_bottles
+locals: _  __  _dir_  _ex_  _file_  _in_  _out_  _pry_
+[4] pry(main)> inspect
+=> "main"
+[5] pry(main)> 
+NoMethodError: undefined method `step' for nil:NilClass
+from (pry):1:in `calculate_totals'
+[2] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 38 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+ => 38:   binding.pry
+    39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):1:in `calculate_totals'
+[2] pry(main)> next
+SyntaxError: (eval):2: Can't escape from eval with next
+[2] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+pop_bottle.rb:49:in `main_prompt': undefined method `chomp' for nil:NilClass (NoMethodError)
+	from pop_bottle.rb:61:in `<main>'
+vagrant [pop_bottle]> ruby -v
+ruby 2.1.3p242 (2014-09-19 revision 47630) [i686-linux]
+vagrant [pop_bottle]> pry -v
+Pry version 0.10.1 on Ruby 2.1.3
+vagrant [pop_bottle]> which ruby
+/usr/local/rvm/rubies/ruby-2.1.3/bin/ruby
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 38 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+ => 38:   binding.pry
+    39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> finish
+NameError: undefined local variable or method `finish' for main:Object
+from (pry):1:in `calculate_totals'
+[2] pry(main)> step
+NameError: undefined local variable or method `step' for main:Object
+from (pry):2:in `calculate_totals'
+[3] pry(main)> next
+SyntaxError: (eval):2: Can't escape from eval with next
+[3] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> gem install pry-nav
+Fetching: pry-nav-0.2.4.gem (100%)
+Successfully installed pry-nav-0.2.4
+Parsing documentation for pry-nav-0.2.4
+Installing ri documentation for pry-nav-0.2.4
+Done installing documentation for pry-nav after 0 seconds
+1 gem installed
+vagrant [pop_bottle]> ruby pop_bottle.rb
+How many dollars do you have? (0) to quit
+20
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 38 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+ => 38:   binding.pry
+    39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> step
+
+From: /vagrant/Ruby/W1D3/pop_bottle/pop_bottle.rb @ line 39 Object#calculate_totals:
+
+    37: def calculate_totals(starting_money)
+    38:   binding.pry
+ => 39:   @total = starting_money / 2 
+    40:   @total_empty_bottles = 0
+    41:   @total_bottlecaps = 0
+    42: 
+    43:   calculate_total_bottles(@total)
+    44: end
+
+[1] pry(main)> 
+In total, you will be able to drink 35 bottles of soda. Mmm diabetes.
+	10 of those bottles came from your initial purchase.
+	17 of those bottles came from recycling your empty bottles.
+	8 of those bottles came from recycling your bottlecaps.
+
+	You still have 1 empty bottles left!.
+	You still have 3 bottlecaps left!.
+How many dollars do you have? (0) to quit
+0
+vagrant [pop_bottle]> la
+.DS_Store  pop_bottle copy.rb  pop_bottle.rb
+vagrant [pop_bottle]> ls
+pop_bottle copy.rb  pop_bottle.rb
+vagrant [pop_bottle]> cd .
+vagrant [pop_bottle]> cd ..
+vagrant [W1D3]> ls
+countletters  debugging  pop_bottle  roman_numerals  state_info
+vagrant [W1D3]> cd ..
+vagrant [Ruby]> ls
+W1D1  W1D2  W1D3
+vagrant [Ruby]> mkdir W1D4
+vagrant [Ruby]> cd W1D4
+vagrant [W1D4]> ls
+vagrant [W1D4]> mkdir benchmark
+vagrant [W1D4]> git clone git@gist.github.com:1681b1f05a2d822c474a.git benchmark/
+Cloning into 'benchmark'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 23 (delta 7), reused 23 (delta 7), pack-reused 0
+Receiving objects: 100% (23/23), done.
+Resolving deltas: 100% (7/7), done.
+Checking connectivity... done.
+vagrant [W1D4]> cd be
+-bash: cd: be: No such file or directory
+vagrant [W1D4]> cd benchmark/
+vagrant [benchmark (master)⚡]> ls
+benchmark_with_block.rb
+vagrant [benchmark (master)⚡]> ruby benchmark_with_block.rb 
+string.reverse took 6.969956129 seconds to run
+vagrant [benchmark (master)⚡]> git status
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   benchmark_with_block.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+vagrant [benchmark (master)⚡]> git add benchmark_with_block.rb 
+vagrant [benchmark (master)⚡]> git commit -m "create benchmark method"
+[master 612f18a] create benchmark method
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+vagrant [benchmark (master)↑]> git push -u origin master
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@gist.github.com:1681b1f05a2d822c474a.git
+   1e6a926..612f18a  master -> master
+Branch master set up to track remote branch master from origin.
+vagrant [benchmark (master)]> cd ..
+vagrant [W1D4]> ls
+benchmark
+vagrant [W1D4]> mkdir regular_expresssion
+vagrant [W1D4]> cd regular_expresssion/
+vagrant [regular_expresssion]> ls
+vagrant [regular_expresssion]> cd ..
+vagrant [W1D4]> ls
+benchmark  regular_expresssion
+vagrant [W1D4]> git clone git@gist.github.com:d62254539edcafaeeae2.git regular_expresssion/
+Cloning into 'regular_expresssion'...
+remote: Counting objects: 22, done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 22 (delta 6), reused 22 (delta 6), pack-reused 0
+Receiving objects: 100% (22/22), done.
+Resolving deltas: 100% (6/6), done.
+Checking connectivity... done.
+vagrant [W1D4]> cd regular_expresssion/
+vagrant [regular_expresssion (master)]> ls
+regular_expressions.rb
+vagrant [regular_expresssion (master)]> irb
+2.1.3 :001 > test = /\d/.match('2')
+ => #<MatchData "2"> 
+2.1.3 :002 > test
+ => #<MatchData "2"> 
+2.1.3 :003 > return true if test
+LocalJumpError: unexpected return
+	from (irb):3
+	from /usr/local/rvm/rubies/ruby-2.1.3/bin/irb:11:in `<main>'
+2.1.3 :004 > 
+vagrant [regular_expresssion (master)]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+regular_expressions.rb:19:in `grab_sin': undefined method `captures' for nil:NilClass (NoMethodError)
+	from regular_expressions.rb:28:in `<main>'
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+234-604-142
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+234-604-142
+false
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+234-604-142
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+["234-604-142"]
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+["234-604-142"]
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+"234-604-142"
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+false
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+234-604-142
+
+"234-604-142"
+234-604-142
+234-604-142
+
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+regular_expressions.rb:33:in `grab_all_sins': undefined method `[]' for nil:NilClass (NoMethodError)
+	from regular_expressions.rb:44:in `<main>'
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+regular_expressions.rb:32:in `grab_all_sins': undefined method `scan' for /(\d{3}-\d{3}-\d{3})/:Regexp (NoMethodError)
+	from regular_expressions.rb:37:in `<main>'
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+regular_expressions.rb:32:in `grab_all_sins': undefined method `scan' for /(\d{3}-\d{3}-\d{3})/:Regexp (NoMethodError)
+	from regular_expressions.rb:37:in `<main>'
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+regular_expressions.rb:32:in `grab_all_sins': undefined method `scan' for /(\d{3}-\d{3}-\d{3})/:Regexp (NoMethodError)
+	from regular_expressions.rb:37:in `<main>'
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+234-604-142
+350-802-074
+013-630-876
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+[["234-604-142"], ["350-802-074"], ["013-630-876"]]
+false
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+["234-604-142", "350-802-074", "013-630-876"]
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+false
+false
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+false
+false
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+false
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+X-142, X-074, X-876
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-142, XXX-074, XXX-876
+false
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+
+false
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+please confirm your identity: XXX-XXX-142
+true
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+hide_all_sins does not alter a string without SINs in it
+please confirm your identity: XXX-XXX-142
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+please confirm your identity: XXX-XXX-142
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> git status
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   regular_expressions.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> git status
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   regular_expressions.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+vagrant [regular_expresssion (master)⚡]> git add regular_expressions.rb 
+vagrant [regular_expresssion (master)⚡]> git commit -m "Tests all pass"
+[master d4fbf42] Tests all pass
+ 1 file changed, 9 insertions(+)
+vagrant [regular_expresssion (master)↑]> git push -u origin master
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 484 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@gist.github.com:d62254539edcafaeeae2.git
+   fc23a4e..d4fbf42  master -> master
+Branch master set up to track remote branch master from origin.
+vagrant [regular_expresssion (master)]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-142, XXX-074, XXX-876
+false
+false
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXXXXX-142, XXXXXX-074, XXXXXX-876
+false
+false
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+true
+format_sins does not alter a string without SINs in it
+true
+true
+vagrant [regular_expresssion (master)⚡]> irb
+2.1.3 :001 > string = "1234.1234.4"
+ => "1234.1234.4" 
+2.1.3 :002 > data = /(\d[^\d]?){9}/.match(string)
+ => #<MatchData "1234.1234.4" 1:"4"> 
+2.1.3 :003 >   if data
+2.1.3 :004?>       digits = data.slice(1, data.length).join('')
+2.1.3 :005?>     end
+NoMethodError: undefined method `slice' for #<MatchData "1234.1234.4" 1:"4">
+	from (irb):4
+	from /usr/local/rvm/rubies/ruby-2.1.3/bin/irb:11:in `<main>'
+2.1.3 :006 >   digits.gsub(/(\d{3})(\d{3})(\d{3})/, '\1-\2-\3')
+NoMethodError: undefined method `gsub' for nil:NilClass
+	from (irb):6
+	from /usr/local/rvm/rubies/ruby-2.1.3/bin/irb:11:in `<main>'
+2.1.3 :007 > data = /(\d[^\d]?){9}/.match(string)
+ => #<MatchData "1234.1234.4" 1:"4"> 
+2.1.3 :008 > data.to_a
+ => ["1234.1234.4", "4"] 
+2.1.3 :009 > data = /(\d[^\d]?){9}/.match(string)
+ => #<MatchData "1234.1234.4" 1:"4"> 
+2.1.3 :010 >   if data
+2.1.3 :011?>       digits = data.to_a.slice(1, data.length).join('')
+2.1.3 :012?>     end
+ => "4" 
+2.1.3 :013 >   digits.gsub(/(\d{3})(\d{3})(\d{3})/, '\1-\2-\3')
+ => "4" 
+2.1.3 :014 > 
+vagrant [regular_expresssion (master)⚡]> irb
+2.1.3 :001 > string = "1234.1234.3"
+ => "1234.1234.3" 
+2.1.3 :002 > data = /(\d[^\d]?){9}/.match(string)
+ => #<MatchData "1234.1234.3" 1:"3"> 
+2.1.3 :003 >   if data
+2.1.3 :004?>       digits = data.to_a.slice(1, data.length).join('')
+2.1.3 :005?>     end
+ => "3" 
+2.1.3 :006 >   digits.gsub(/(\d{3})(\d{3})(\d{3})/, '\1-\2-\3')
+ => "3" 
+2.1.3 :007 > digits
+ => "3" 
+2.1.3 :008 > data.to_a
+ => ["1234.1234.3", "3"] 
+2.1.3 :009 > 
+vagrant [regular_expresssion (master)⚡]> irb
+2.1.3 :001 > string = "1234.1234.3"
+ => "1234.1234.3" 
+2.1.3 :002 > /(\d)[^\d]?{9}/.match(string)
+ => #<MatchData "1" 1:"1"> 
+2.1.3 :003 > /(\d)[^\d]?{9}/g.match(string)
+SyntaxError: (irb):3: unknown regexp option - g
+	from /usr/local/rvm/rubies/ruby-2.1.3/bin/irb:11:in `<main>'
+2.1.3 :004 > g/(\d)[^\d]?{9}/.match(string)
+2.1.3 :005?>   g/(\d)[^\d]?{9}/.match(string)
+2.1.3 :006?>     
+SyntaxError: (irb):4: syntax error, unexpected $undefined
+g/(\d)[^\d]?{9}/.match(string)
+    ^
+(irb):4: syntax error, unexpected '^', expecting ']'
+g/(\d)[^\d]?{9}/.match(string)
+        ^
+	from /usr/local/rvm/rubies/ruby-2.1.3/bin/irb:11:in `<main>'
+vagrant [regular_expresssion (master)⚡]> irb
+2.1.3 :001 > string = "1234.4.1234"
+ => "1234.4.1234" 
+2.1.3 :002 > string.scan(/(\d)[^\d]?{9}/)
+ => [["1"], ["2"], ["3"], ["4"], ["4"], ["1"], ["2"], ["3"], ["4"]] 
+2.1.3 :003 > 
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+234-600-142350-800-074013-600-876
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+234-600-142350-800-074013-600-876
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+[]
+
+[]
+false
+format_sins does not alter a string without SINs in it
+[]
+false
+[]
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+[["2"], ["3"], ["4"], ["6"], ["0"], ["0"], ["1"], ["4"], ["2"], ["3"], ["5"], ["0"], ["8"], ["0"], ["0"], ["0"], ["7"], ["4"], ["0"], ["1"], ["3"], ["6"], ["0"], ["0"], ["8"], ["7"], ["6"]]
+234-600-142350-800-074013-600-876
+[["2"], ["3"], ["4"], ["6"], ["0"], ["0"], ["1"], ["4"], ["2"], ["3"], ["5"], ["0"], ["8"], ["0"], ["0"], ["0"], ["7"], ["4"], ["0"], ["1"], ["3"], ["6"], ["0"], ["0"], ["8"], ["7"], ["6"]]
+false
+format_sins does not alter a string without SINs in it
+[["4"], ["4"], ["2"], ["1"], ["4"], ["2"], ["2"]]
+false
+[["1"], ["2"], ["3"], ["4"], ["4"], ["5"]]
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+[["2"], ["3"], ["4"], ["6"], ["0"], ["0"], ["1"], ["4"], ["2"], ["3"], ["5"], ["0"], ["8"], ["0"], ["0"], ["0"], ["7"], ["4"], ["0"], ["1"], ["3"], ["6"], ["0"], ["0"], ["8"], ["7"], ["6"]]
+234-600-142, 350-800-074, 013-600-876, 
+[["2"], ["3"], ["4"], ["6"], ["0"], ["0"], ["1"], ["4"], ["2"], ["3"], ["5"], ["0"], ["8"], ["0"], ["0"], ["0"], ["7"], ["4"], ["0"], ["1"], ["3"], ["6"], ["0"], ["0"], ["8"], ["7"], ["6"]]
+false
+format_sins does not alter a string without SINs in it
+[["4"], ["4"], ["2"], ["1"], ["4"], ["2"], ["2"]]
+false
+[["1"], ["2"], ["3"], ["4"], ["4"], ["5"]]
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+234-600-142, 350-800-074, 013-600-876, 
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876, "
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876, "
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234600142350800074013600876"
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234600142350800074013600876"
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876, "
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234600142350800074013600876"
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+String
+"234600142350800074013600876"
+String
+false
+format_sins does not alter a string without SINs in it
+String
+false
+String
+false
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234600142350800074013600876"
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876, "
+false
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876"
+true
+format_sins does not alter a string without SINs in it
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+regular_expressions.rb:67: syntax error, unexpected keyword_else, expecting keyword_end
+vagrant [regular_expresssion (master)⚡]> clear
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+regular_expressions.rb:67: syntax error, unexpected keyword_else, expecting keyword_end
+vagrant [regular_expresssion (master)⚡]> clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+regular_expressions.rb:67: syntax error, unexpected keyword_else, expecting keyword_end
+regular_expressions.rb:86: syntax error, unexpected end-of-input, expecting keyword_end
+puts format_sins(string) == string
+                                  ^
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876"
+true
+format_sins does not alter a string without SINs in it
+4421422
+false
+false
+vagrant [regular_expresssion (master)⚡]> ruby regular_expressions.rb 
+has_sin? returns true if it has what looks like a SIN
+true
+has_sin? returns false if it doesn't have a SIN
+true
+true
+true
+true
+grab_sin returns an SIN if the string has an SIN
+true
+grab_sin returns nil if it doesn't have a SIN
+true
+grab_all_sins returns all SINs if the string has any SINs
+true
+grab_all_sins returns an empty Array if it doesn't have any SINs
+true
+hide_all_sins obfuscates any SINs in the string
+XXX-XXX-142, XXX-XXX-074, XXX-XXX-876
+true
+true
+hide_all_sins does not alter a string without SINs in it
+true
+format_sins finds and reformat any SINs in the string
+"234-600-142, 350-800-074, 013-600-876"
+true
+format_sins does not alter a string without SINs in it
+4421422
+false
+123445
+false
+vagrant [regular_expresssion (master)⚡]> cd ..
+vagrant [W1D4]> ls
+benchmark  regular_expresssion
+vagrant [W1D4]> mkdir candidate
+vagrant [W1D4]> git clone git@gist.github.com:d0df9ac8fd031f82ec7c.git candidate/
+Cloning into 'candidate'...
+remote: Counting objects: 23, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 23 (delta 10), reused 23 (delta 10), pack-reused 0
+Receiving objects: 100% (23/23), done.
+Resolving deltas: 100% (10/10), done.
+Checking connectivity... done.
+vagrant [W1D4]> cd candidate/
+vagrant [candidate (master)]> ls
+candidates.rb  filters.rb  main.rb
+vagrant [candidate (master)]> ruby main.rb 
+main.rb:12:in `<main>': undefined local variable or method `qualified_candidates' for main:Object (NameError)
+vagrant [candidate (master)]> ruby main.rb 
+nil
+vagrant [candidate (master)⚡]> ruby main.rb 
+main.rb:12:in `<main>': undefined local variable or method `qualified_candidates' for main:Object (NameError)
+vagrant [candidate (master)]> ruby main.rb 
+
+From: /vagrant/Ruby/W1D4/candidate/main.rb @ line 10 :
+
+     5: require './candidates'
+     6: require './filters'
+     7: 
+     8: ## Your test code can go here
+     9: 
+ => 10: binding.pry
+    11: 
+    12: pp qualified_candidates
+
+[1] pry(main)> @candidates
+=> [{:id=>5,
+=> [{:id=>5,
+=> [{:id=>5,
+  :years_of_experience=>4,
+  :github_points=>293,
+  :languages=>["C", "Ruby", "Python", "Clojure"],
+  :date_applied=>Sat, 29 Aug 2015,
+  :age=>26},
+ {:id=>7,
+  :years_of_experience=>1,
+  :github_points=>145,
+  :languages=>["JavaScript", "Ruby", "Go", "Erlang"],
+  :date_applied=>Wed, 19 Aug 2015,
+  :age=>19},
+ {:id=>9,
+  :years_of_experience=>6,
+  :github_points=>435,
+  :languages=>["JavaScript", "SQL", "C#"],
+  :date_applied=>Wed, 02 Sep 2015,
+  :age=>32},
+ {:id=>10,
+  :years_of_experience=>3,
+  :github_points=>232,
+  :languages=>["Java", "Ruby", "JavaScript"],
+  :date_applied=>Sat, 22 Aug 2015,
+  :age=>31},
+ {:id=>11,
+  :years_of_experience=>12,
+  :github_points=>32,
+  :languages=>["VB", "Cobol", "Fortran"],
+  :date_applied=>Tue, 01 Sep 2015,
+  :age=>42},
+ {:id=>13,
+  :years_of_experience=>2,
+  :github_points=>328,
+  :languages=>["Python", "Ruby", "JavaScript"],
+  :date_applied=>Sun, 30 Aug 2015,
+  :age=>25},
+ {:id=>15,
+  :years_of_experience=>1,
+  :github_points=>400,
+  :languages=>["JavaScript", "Ruby"],
+  :date_applied=>Mon, 31 Aug 2015,
+ ESCOC
+
+
+
+,
+
+
+
+
+
+ng"],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+=> [{:id=>5,
+  :years_of_experience=>4,
+  :github_points=>293,
+  :languages=>["C", "Ruby", "Python", "Clojure"],
+  :date_applied=>Sat, 29 Aug 2015,
+  :age=>26},
+ {:id=>7,
+  :years_of_experience=>1,
+  :github_points=>145,
+  :languages=>["JavaScript", "Ruby", "Go", "Erlang"],
+  :date_applied=>Wed, 19 Aug 2015,
+  :age=>19},
+ {:id=>9,
+  :years_of_experience=>6,
+  :github_points=>435,
+  :languages=>["JavaScript", "SQL", "C#"],
+  :date_applied=>Wed, 02 Sep 2015,
+  :age=>32},
+ {:id=>10,
+  :years_of_experience=>3,
+  :github_points=>232,
+  :languages=>["Java", "Ruby", "JavaScript"],
+  :date_applied=>Sat, 22 Aug 2015,
+  :age=>31},
+ {:id=>11,
+  :years_of_experience=>12,
+  :github_points=>32,
+  :languages=>["VB", "Cobol", "Fortran"],
+  :date_applied=>Tue, 01 Sep 2015,
+  :age=>42},
+ {:id=>13,
+  :years_of_experience=>2,
+  :github_points=>328,
+  :languages=>["Python", "Ruby", "JavaScript"],
+  :date_applied=>Sun, 30 Aug 2015,
+  :age=>25},
+ {:id=>15,
+  :years_of_experience=>1,
+  :github_points=>400,
+  :languages=>["JavaScript", "Ruby"],
+  :date_applied=>Mon, 31 Aug 2015,
+ ESCOD
+=> [{:id=>5,
+  :years_of_experience=>4,
+  :github_points=>293,
+  :languages=>["C", "Ruby", "Python", "Clojure"],
+  :date_applied=>Sat, 29 Aug 2015,
+  :age=>26},
+ {:id=>7,
+  :years_of_experience=>1,
+  :github_points=>145,
+  :languages=>["JavaScript", "Ruby", "Go", "Erlang"],
+  :date_applied=>Wed, 19 Aug 2015,
+  :age=>19},
+ {:id=>9,
+  :years_of_experience=>6,
+  :github_points=>435,
+  :languages=>["JavaScript", "SQL", "C#"],
+  :date_applied=>Wed, 02 Sep 2015,
+  :age=>32},
+ {:id=>10,
+  :years_of_experience=>3,
+  :github_points=>232,
+  :languages=>["Java", "Ruby", "JavaScript"],
+  :date_applied=>Sat, 22 Aug 2015,
+  :age=>31},
+ {:id=>11,
+  :years_of_experience=>12,
+  :github_points=>32,
+  :languages=>["VB", "Cobol", "Fortran"],
+  :date_applied=>Tue, 01 Sep 2015,
+  :age=>42},
+ {:id=>13,
+  :years_of_experience=>2,
+  :github_points=>328,
+  :languages=>["Python", "Ruby", "JavaScript"],
+  :date_applied=>Sun, 30 Aug 2015,
+  :age=>25},
+ {:id=>15,
+  :years_of_experience=>1,
+  :github_points=>400,
+  :languages=>["JavaScript", "Ruby"],
+  :date_applied=>Mon, 31 Aug 2015,
+  :age=>16}]
+ ESCOC
+
+
+
+,
+
+
+
+
+
+ng"],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ESCOD
+=> [{:id=>5,
+  :years_of_experience=>4,
+  :github_points=>293,
+  :languages=>["C", "Ruby", "Python", "Clojure"],
+  :date_applied=>Sat, 29 Aug 2015,
+  :age=>26},
+ {:id=>7,
+  :years_of_experience=>1,
+  :github_points=>145,
+  :languages=>["JavaScript", "Ruby", "Go", "Erlang"],
+  :date_applied=>Wed, 19 Aug 2015,
+  :age=>19},
+ {:id=>9,
+  :years_of_experience=>6,
+  :github_points=>435,
+  :languages=>["JavaScript", "SQL", "C#"],
+  :date_applied=>Wed, 02 Sep 2015,
+  :age=>32},
+ {:id=>10,
+  :years_of_experience=>3,
+  :github_points=>232,
+  :languages=>["Java", "Ruby", "JavaScript"],
+  :date_applied=>Sat, 22 Aug 2015,
+  :age=>31},
+ {:id=>11,
+  :years_of_experience=>12,
+  :github_points=>32,
+  :languages=>["VB", "Cobol", "Fortran"],
+  :date_applied=>Tue, 01 Sep 2015,
+  :age=>42},
+ {:id=>13,
+  :years_of_experience=>2,
+  :github_points=>328,
+  :languages=>["Python", "Ruby", "JavaScript"],
+  :date_applied=>Sun, 30 Aug 2015,
+  :age=>25},
+ {:id=>15,
+  :years_of_experience=>1,
+  :github_points=>400,
+  :languages=>["JavaScript", "Ruby"],
+  :date_applied=>Mon, 31 Aug 2015,
+[2] pry(main)> 
+[3] pry(main)>
+[3] pry(main)> 
+main.rb:12:in `<main>': undefined local variable or method `qualified_candidates' for main:Object (NameError)
+vagrant [candidate (master)⚡]> ruby main.rb 
+
+vagrant [candidate (master)⚡]> ruby main.rb 
+true
+vagrant [candidate (master)⚡]> ruby main.rb 
+true
+[{:id=>5,
+  :years_of_experience=>4,
+  :github_points=>293,
+  :languages=>["C", "Ruby", "Python", "Clojure"],
+  :date_applied=>Sat, 29 Aug 2015,
+  :age=>26},
+ {:id=>7,
+  :years_of_experience=>1,
+  :github_points=>145,
+  :languages=>["JavaScript", "Ruby", "Go", "Erlang"],
+  :date_applied=>Wed, 19 Aug 2015,
+  :age=>19},
+ {:id=>9,
+  :years_of_experience=>6,
+  :github_points=>435,
+  :languages=>["JavaScript", "SQL", "C#"],
+  :date_applied=>Wed, 02 Sep 2015,
+  :age=>32},
+ {:id=>10,
+  :years_of_experience=>3,
+  :github_points=>232,
+  :languages=>["Java", "Ruby", "JavaScript"],
+  :date_applied=>Sat, 22 Aug 2015,
+  :age=>31},
+ {:id=>11,
+  :years_of_experience=>12,
+  :github_points=>32,
+  :languages=>["VB", "Cobol", "Fortran"],
+  :date_applied=>Tue, 01 Sep 2015,
+  :age=>42},
+ {:id=>13,
+  :years_of_experience=>2,
+  :github_points=>328,
+  :languages=>["Python", "Ruby", "JavaScript"],
+  :date_applied=>Sun, 30 Aug 2015,
+  :age=>25},
+ {:id=>15,
+  :years_of_experience=>1,
+  :github_points=>400,
+  :languages=>["JavaScript", "Ruby"],
+  :date_applied=>Mon, 31 Aug 2015,
+  :age=>16}]
+vagrant [candidate (master)⚡]> 

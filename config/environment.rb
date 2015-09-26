@@ -7,6 +7,8 @@ require 'active_support/all'
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'sinatra/contrib/all' # Requires cookies, among other things
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
 
 require 'pry'
 
@@ -22,6 +24,10 @@ configure do
   set :session_secret, ENV['SESSION_KEY'] || 'lighthouselabssecret'
 
   set :views, File.join(Sinatra::Application.root, "app", "views")
+end
+
+CarrierWave.configure do |config|
+  config.root = APP_ROOT.join('public')
 end
 
 # Set up the database and models
