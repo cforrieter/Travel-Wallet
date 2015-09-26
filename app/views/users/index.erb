@@ -28,11 +28,20 @@
           </form>
           </div>
           <div class="col-sm-3">
-            <ul>
+            <div class="container">
             <% Share.where(category_id: category.id).each do |share| %>
-              <li><%= share.user.email %> <a href="/shares/<%= share.id %>?_method=DELETE">Delete</a></li>
+              <div class="row">
+                <div class="col-sm-3">
+                  <%= share.user.email %>
+
+                  <form class="pull-right" method="post" action="/shares/<%= share.id %>">
+                    <input type="hidden" name="_method" value="DELETE" />
+                    <button>Delete</button>
+                  </form>
+                </div>
+              </div>
             <% end %>
-            </ul>
+            </div>
           </div>
           <div class="col-sm-1">
           <form class = "delete-button" onsubmit="return confirm('Confirm category delete?')"action="/category/<%=  category.id %>" method="POST">
@@ -58,7 +67,7 @@
 <% else %>
   <div class="category-container container">
     <h1><%= @the_user.first_name %>'s shared categories</h1>
-    <% @user.shares.each do |share| %>
+    <% @shares.each do |share| %>
       <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
     <% end %>  
   </div>

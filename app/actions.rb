@@ -82,9 +82,9 @@ end
 
 delete '/shares/:id' do |id|
   share = Share.find(id)
-  category = share.category_id
+  user = User.find(share.category.user_id)
   share.destroy
-  redirect "/category/#{category}"
+  redirect "/users/#{user.id}"
 end
 
 get '/users/:id' do |id|
@@ -93,9 +93,11 @@ get '/users/:id' do |id|
     @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
     if @user.id === @the_user.id || !@shares.empty?
       erb :'users/index'
+    else
+      redirect '/'  
     end
   else
-    "404 not found!"
+    redirect '/'
   end
 end
 
