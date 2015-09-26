@@ -22,3 +22,4 @@ group :development, :test do
   gem 'shotgun'
   gem 'pg'
 end
+

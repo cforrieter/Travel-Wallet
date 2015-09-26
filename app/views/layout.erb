@@ -2,6 +2,10 @@
     <html lang="en">
     <head>
       
+      <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
       <link rel="stylesheet" href="/stylesheets/normalize.css">
       <!--
         application.css is where you put your styles
@@ -18,17 +22,20 @@
       <script src="/javascript/application.js"></script>
     <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-              
+      
+
 
       <title>Travel Wallet</title>
     </head>
     <body>
     <!-- Button trigger modal -->
     <!-- Modal -->
+    <%= erb :'_navbar' %>
     <%= erb :'/users/_login_modal' %>
 
 
       <div id="main">
+
         <%= yield %>
       </div>
 

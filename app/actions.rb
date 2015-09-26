@@ -93,10 +93,16 @@ get '/users/:id' do |id|
   erb :'users/index'
 end
 
+# get '/category/show' do
+#   erb :'category/show'
+# end
+
 get '/category/:id' do |id|
   @category = Category.find(id)
   erb :'/category/show'
 end
+
+
 
 post '/category/:id/document/new' do |id|
   @category = Category.find(id)

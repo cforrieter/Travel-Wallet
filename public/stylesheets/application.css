@@ -7,6 +7,10 @@ a:hover {}
 a:active{}
 a:focus{}
 
+a#logo {
+  font-family: 'Special Elite', cursive;
+}
+
 nav {
   position: fixed;
   background: rgba(0,0,0,.15);
@@ -28,7 +32,7 @@ nav .login {float: right;}
 nav .brand {float: left;}
 
 
-.jumbotron {
+/*.jumbotron {
   top: 0;
   right: 0;
   left: 0;
@@ -37,7 +41,7 @@ nav .brand {float: left;}
   color: rgb(255,255,255);
   height: 30em;
   padding: 1em;
-  position: absolute;
+  position: absolute;*/
 }
 .jumbotron header {
   text-align: center;
@@ -69,6 +73,10 @@ nav .brand {float: left;}
 #main {
   margin-top: 30em;
   padding:1em 1em 1em;
+}
+
+h1#hook {
+  font-family: 'Lobster', cursive;
 }
 
 body {
