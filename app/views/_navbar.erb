@@ -1,0 +1,14 @@
+  <nav class="container-fluid">
+        <div>
+          <a id="logo" href="/" class="btn btn-lg pull-left">Travel Wallet</a>
+        </div>
+        
+            <div class="container"> 
+              <% unless current_user %>
+                <a class="btn btn-lg pull-right" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Register</a>
+              <% else %>
+                <a class="btn btn-primary btn-md pull-left" href="/logout">Log out I guess</a>
+              <% end%>          
+            </div>
+        
+      </nav>
