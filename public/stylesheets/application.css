@@ -29,10 +29,10 @@ nav .brand {float: left;}
 
 
 .jumbotron {
-  top: 0;
+  top: -40%;
   right: 0;
   left: 0;
-  background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;
+  /*--background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;*/
   background-size: cover;
   color: rgb(255,255,255);
   height: 30em;

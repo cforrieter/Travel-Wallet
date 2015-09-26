@@ -1,3 +1,18 @@
+<div class="side-nav pull-left">
+  <h4>Main page</h4>
+    <a href="/users/<%= @user.id %>"><p class="text-center"><%= @user.first_name %></p></a>
+  <h5>Your Connections</h5>
+  <ul>
+    <% @user.connections.each do |connection| %>
+      <li>
+        <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="main-content pull-right">
+
 <% if @user.id == @the_user.id %>
   <h1>My categories</h1>
   <% @the_user.categories.each do |category| %>  
@@ -11,7 +26,7 @@
               <button type="submit" class="btn btn-sm btn-info">Share</button>
               <input type="email" name="email" class="form-control" placeholder="example@gmail.com" aria-describedby="basic-addon1">            
           </form>
-
+          
           <form class = "delete-button" onsubmit="return confirm('Confirm category delete?')"action="/category/<%=  category.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button type="submit" class="btn btn-sm btn-danger">Delete </button>
@@ -31,14 +46,14 @@
     <button type="submit" class="btn btn-default">New Category</button>
   </form>
 
-  <% @the_user.connections.each do |connection| %>
-    <div>
-      <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
-    </div>
-  <% end %>
+  
 <% else %>
-  <h1><%= @the_user.first_name %>'s shared categories</h1>
-  <% @user.shares.each do |share| %>
-    <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
-  <% end %>  
+  <div class="category-container container">
+    <h1><%= @the_user.first_name %>'s shared categories</h1>
+    <% @user.shares.each do |share| %>
+      <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
+    <% end %>  
+  </div>
 <% end %>
+
+</div>
