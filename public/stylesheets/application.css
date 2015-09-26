@@ -32,13 +32,22 @@ nav a {
 nav .login {float: right;}
 nav .brand {float: left;}
 
+.slick-slide {
+  height: 500px;
+  width: 100%;
+}
+
+.slick-slide img {
+   height: 500px;
+   width: 100%;
+}
 
 .jumbotron {
-  top: -40%;
+  top: -20%;
   right: 0;
   left: 0;
   /*background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;*/
-
+  position: absolute;
   background-size: cover;
   color: rgb(255,255,255);
  /* height: 30em;
@@ -189,3 +198,10 @@ body {
   text-align: center;
 }
 
+.side-nav {
+  width: 20%;
+}
+
+.main-content {
+  width: 80%;
+}

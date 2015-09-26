@@ -1,12 +1,12 @@
 <div class="side-nav pull-left">
   <h4>Main page</h4>
-    <a href="/users/<%= @user.id %>"><p class="text-center"><%= @user.first_name %></p></a>
+    <a href="/users/<%= @user.id %>"><p><%= @user.first_name %></p></a>
   <h5>Your Connections</h5>
-  <ul>
+  
     <% @user.connections.each do |connection| %>
-      <li>
+      <p>
         <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
-      </li>
+      </p>
     <% end %>
   </ul>
 </div>
@@ -16,17 +16,25 @@
 <% if @user.id == @the_user.id %>
   <h1>My categories</h1>
   <% @the_user.categories.each do |category| %>  
-    <div class="category-container container">
+    <div class="container">
       <div class="row">
         <div class="col-sm-2">
           <a href="/category/<%= category.id %>"><%= category.name %></a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <form action="/shares/<%=  category.id %>/create" method="POST">
               <button type="submit" class="btn btn-sm btn-info">Share</button>
               <input type="email" name="email" class="form-control" placeholder="example@gmail.com" aria-describedby="basic-addon1">            
           </form>
-          
+          </div>
+          <div class="col-sm-3">
+            <ul>
+            <% Share.where(category_id: category.id).each do |share| %>
+              <li><%= share.user.email %> <a href="/shares/<%= share.id %>?_method=DELETE">Delete</a></li>
+            <% end %>
+            </ul>
+          </div>
+          <div class="col-sm-1">
           <form class = "delete-button" onsubmit="return confirm('Confirm category delete?')"action="/category/<%=  category.id %>" method="POST">
             <input type="hidden" name="_method" value="DELETE">
             <button type="submit" class="btn btn-sm btn-danger">Delete </button>
