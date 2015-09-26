@@ -32,9 +32,18 @@ nav a {
 nav .login {float: right;}
 nav .brand {float: left;}
 
+.slick-slide {
+ height: 600px;
+ width: 100%;
+}
+
+.slick-slide img {
+  height: 600px;
+  width: 100%;
+}
 
 .jumbotron {
-  top: -40%;
+  top: -20%;
   right: 0;
   left: 0;
   /*background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;*/
@@ -49,23 +58,14 @@ nav .brand {float: left;}
 .jumbotron header {
   text-align: center;
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
-  top: 50%;
+  top: o;
+  width: 1800px;
+  height: 300px;
   transform: translateY(-50);
 }
-
-.jumbotron header h1 {
-  font-size: 3em; 
-  margin: 0; 
-  text-transform: 
-  uppercase; 
-  color: rgb(255,255,255);
-}
-
-.jumbotron header p {
-  color: rgb(255,255,255);
-}
+/*<div id="slider1_container" style="position: relative; top: -48px; left: 0px; width: 1000px; height: 300px;">*/
 
 .row:after {
   content: "";
@@ -73,22 +73,32 @@ nav .brand {float: left;}
   clear: both;
 }
 
+
 #main {
-  margin-top: 10em;
+  margin-top: 5em;
   padding:1em 1em 1em;
 }
 
 h1#call {
-  font-size: 3em;
-  font-family: 'Numans', sans-serif;  
- /* text-transform: 
-  uppercase;*/ 
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;  
   color: rgb(255,255,255);  
 }
 
 h1#hook {
-  margin-top: 10em;
+  margin-top: 5em;
   font-family: 'Lobster', cursive;
+  font-size: 4em;
+}
+
+p {
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p#blurb {
+  color: rgb(255,255,255)
 }
 
 body {
