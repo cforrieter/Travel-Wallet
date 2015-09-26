@@ -32,17 +32,18 @@ nav .login {float: right;}
 nav .brand {float: left;}
 
 
-/*.jumbotron {
+.jumbotron {
   top: 0;
   right: 0;
   left: 0;
-  background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;
+  /*background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;*/
   background-size: cover;
   color: rgb(255,255,255);
-  height: 30em;
-  padding: 1em;
-  position: absolute;*/
-}
+ /* height: 30em;
+  padding: 1em;*/
+  position: absolute;
+  }
+
 .jumbotron header {
   text-align: center;
   left: 0;
@@ -71,11 +72,12 @@ nav .brand {float: left;}
 }
 
 #main {
-  margin-top: 30em;
+  margin-top: 10em;
   padding:1em 1em 1em;
 }
 
 h1#hook {
+  margin-top: 10em;
   font-family: 'Lobster', cursive;
 }
 
