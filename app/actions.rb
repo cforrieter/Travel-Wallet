@@ -71,6 +71,8 @@ post '/users/new' do
     session[:error] = "Your sign up information is incorrect"
     redirect '/users/news'
   end
+post '/user/new' do
+
 end
 
 
@@ -85,6 +87,7 @@ end
 # before filter => if not logged in, redirect to 401
 
 get '/' do
+  session[:user_id] = 1
   erb :index
 end
 
@@ -98,6 +101,7 @@ end
 # end
 
 get '/category/:id' do |id|
+  # binding.pry
   @category = Category.find(id)
   erb :'/category/show'
 end
@@ -122,7 +126,6 @@ post '/category/create' do
   category.name = params[:name]
   category.user = User.find(session[:user_id])
   category.save!
-
   redirect "/users/#{session[:user_id]}"
 end
 
@@ -132,3 +135,26 @@ post '/shares/:id/create' do |id|
   @share.category = Category.find(id)
   @share.save
 end
+
+# Will delete a file from a category.
+delete 'document/:id/destroy/' do |id|
+  document = Document.find(id)
+  category_id = document.category.id
+  document.destroy
+  redirect "/category/#{category_id}"
+end
+
+# Will delete a category
+delete '/category/:id' do |id|
+  category = Category.find(id)
+  user_id = category.user_id
+  category.destroy
+  redirect "/users/#{user_id}"
+end
+
+
+
+
+
+
+
