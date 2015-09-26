@@ -9,6 +9,7 @@ a:focus{}
 
 a#logo {
   font-family: 'Special Elite', cursive;
+  font-size: 2em;
 }
 
 nav {
@@ -74,6 +75,14 @@ nav .brand {float: left;}
 #main {
   margin-top: 10em;
   padding:1em 1em 1em;
+}
+
+h1#call {
+  font-size: 3em;
+  font-family: 'Numans', sans-serif;  
+ /* text-transform: 
+  uppercase;*/ 
+  color: rgb(255,255,255);  
 }
 
 h1#hook {
