@@ -31,9 +31,9 @@
     <button type="submit" class="btn btn-default">New Category</button>
   </form>
 
-  <% @the_user.shares.each do |share| %>
+  <% @the_user.connections.each do |connection| %>
     <div>
-      <a href="/users/<%= User.find(share.category.user_id).id %>"><%= User.find(share.category.user_id).first_name %></a>
+      <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
     </div>
   <% end %>
 <% else %>
