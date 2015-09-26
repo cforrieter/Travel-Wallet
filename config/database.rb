@@ -6,8 +6,7 @@ configure do
 
   set :database, {
     adapter: "postgresql",
-    database: "travelwallet",
-    port: 5433
+    database: "travelwallet"
   }
 
   # Load all models from app/models, using autoload instead of require

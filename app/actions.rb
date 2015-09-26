@@ -1,5 +1,4 @@
 helpers do
-
  def current_user
    @user = User.find(session[:user_id]) if session[:user_id]
  end
@@ -32,7 +31,7 @@ get '/login' do
  erb :login
 end
 
-# Login varificaton
+# Login verificaton
 post '/login' do
  email = params[:email]
  password = params[:password]
@@ -46,33 +45,27 @@ post '/login' do
    redirect "/users/#{user.id}"
  else
    session[:error] = "Your log in information is incorrect"
-   redirect '/users/new'
+   redirect '/'
  end
 end
 
-# user page retrieve
-get '/users/new' do
- erb :'users/new'
-end
 
 # Create and save new user
 post '/users/new' do
-    email = params[:email], 
-    first_name = params[:first_name],
-    last_name = params[:last_name],
-    password = BCrypt::Password.create(params[:password])
+  email = params[:email]
+  first_name = params[:first_name] 
+  last_name = params[:last_name] 
+  password = BCrypt::Password.create(params[:password])
   
-  @user = User.create(first_name: first_name, last_name: last_name, email: email, password_hash: password)
-
+  user = User.create(first_name: first_name, last_name: last_name, email: email, password_hash: password)
+  binding.pry
   if user
     session[:user_id] = user.id
-    redirect '/'
+    redirect "/users/#{user.id}"
   else
     session[:error] = "Your sign up information is incorrect"
-    redirect '/users/news'
+    redirect '/'
   end
-post '/user/new' do
-
 end
 
 
@@ -83,17 +76,20 @@ get '/logout' do
 end
 
 # Homepage (Root path)
-
-# before filter => if not logged in, redirect to 401
-
 get '/' do
-  session[:user_id] = 1
   erb :index
 end
 
 get '/users/:id' do |id|
-  @user = User.find(id)
-  erb :'users/index'
+  if session[:user_id]
+    @the_user = User.find(id)
+    @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
+    if @user.id === @the_user.id || !@shares.empty?
+      erb :'users/index'
+    end
+  else
+    "404 not found!"
+  end
 end
 
 # get '/category/show' do
@@ -101,9 +97,17 @@ end
 # end
 
 get '/category/:id' do |id|
-  # binding.pry
-  @category = Category.find(id)
-  erb :'/category/show'
+  if session[:user_id]
+    @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, Category.find(id).user_id])  
+    if @user.id == Category.find(id).user_id || !@shares.empty?
+      @category = Category.find(id)
+      erb :'/category/show'
+    else
+      "No access"
+    end
+  else
+    "Not logged in"
+  end
 end
 
 
@@ -130,11 +134,18 @@ post '/category/create' do
 end
 
 post '/shares/:id/create' do |id|
-  @share = Share.new
-  @share.user = User.find_by(email: params[:email])
-  @share.category = Category.find(id)
-  @share.save
+  share = Share.new
+  user = User.find_by(email: params[:email])
+  category = Category.find(id)
+  if user && category && !Share.exists?(user_id: user.id, category_id: category.id) 
+    share.user = user
+    share.category = category
+    share.save
+  end
+
+  redirect "/users/#{category.user_id}"
 end
+
 
 # Will delete a file from a category.
 delete 'document/:id/destroy/' do |id|
@@ -151,10 +162,5 @@ delete '/category/:id' do |id|
   category.destroy
   redirect "/users/#{user_id}"
 end
-
-
-
-
-
 
 
