@@ -114,3 +114,26 @@ post '/shares/:id/create' do |id|
   @share.category = Category.find(id)
   @share.save
 end
+
+# Will delete a file from a category.
+delete 'document/:id/destroy/' do |id|
+  document = Document.find(id)
+  category_id = document.category.id
+  document.destroy
+  redirect "/category/#{category_id}"
+end
+
+# Will delete a category
+delete '/category/:id' do |id|
+  category = Category.find(id)
+  user_id = category.user_id
+  category.destroy
+  redirect "/users/#{user_id}"
+end
+
+
+
+
+
+
+
