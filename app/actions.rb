@@ -1,5 +1,4 @@
 helpers do
-
  def current_user
    @user = User.find(session[:user_id]) if session[:user_id]
  end
@@ -86,18 +85,29 @@ get '/' do
 end
 
 get '/users/:id' do |id|
-  @the_user = User.find(id)
-  @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
-  if @user.id === @the_user.id || !@shares.empty?
-    erb :'users/index'
+  if session[:user_id]
+    @the_user = User.find(id)
+    @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
+    if @user.id === @the_user.id || !@shares.empty?
+      erb :'users/index'
+    end
   else
     "404 not found!"
   end
 end
 
 get '/category/:id' do |id|
-  @category = Category.find(id)
-  erb :'/category/show'
+  if session[:user_id]
+    @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, Category.find(id).user_id])  
+    if @user.id == Category.find(id).user_id || !@shares.empty?
+      @category = Category.find(id)
+      erb :'/category/show'
+    else
+      "No access"
+    end
+  else
+    "Not logged in"
+  end
 end
 
 post '/category/:id/document/new' do |id|

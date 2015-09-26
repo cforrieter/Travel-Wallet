@@ -1,7 +1,16 @@
-<h1><%= @the_user.first_name %>'s categories</h1>
 <% if @user.id == @the_user.id %>
-  <% @the_user.categories.each do |category| %>
-    <div><a href="/category/<%= category.id %>"><%= category.name %></a></div>
+  <h1>My categories</h1>
+  <% @the_user.categories.each do |category| %>  
+    <div class="container">
+      <a href="/category/<%= category.id %>">
+        <div class="row bg-info">
+          <p class="text-center"><%= category.name %>
+            <button class="btn btn-danger pull-right">Delete</button>
+          </p>
+        </div>
+      </a>
+    </div>
+    <br>
   <% end %>
 
   <form action="/category/create" method="POST">
@@ -18,6 +27,7 @@
     </div>
   <% end %>
 <% else %>
+  <h1><%= @the_user.first_name %>'s shared categories</h1>
   <% @user.shares.each do |share| %>
     <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
   <% end %>  
