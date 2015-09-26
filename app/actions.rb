@@ -58,8 +58,8 @@ post '/users/new' do
   password = BCrypt::Password.create(params[:password])
   
   user = User.create(first_name: first_name, last_name: last_name, email: email, password_hash: password)
-  binding.pry
-  if user
+  
+  if user.id
     session[:user_id] = user.id
     redirect "/users/#{user.id}"
   else
@@ -94,6 +94,7 @@ get '/users/:id' do |id|
     if @user.id === @the_user.id || !@shares.empty?
       erb :'users/index'
     else
+      session[:error]
       redirect '/'  
     end
   else
