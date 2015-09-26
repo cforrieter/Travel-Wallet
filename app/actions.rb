@@ -77,11 +77,7 @@ get '/logout' do
 end
 
 # Homepage (Root path)
-
-# before filter => if not logged in, redirect to 401
-
 get '/' do
-  session[:user_id] = 1
   erb :index
 end
 
@@ -136,11 +132,13 @@ post '/shares/:id/create' do |id|
   share = Share.new
   user = User.find_by(email: params[:email])
   category = Category.find(id)
-  unless Share.exists?(user_id: user.id, category_id: category.id)
+  if user && category && !Share.exists?(user_id: user.id, category_id: category.id) 
     share.user = user
     share.category = category
     share.save
   end
+
+  redirect "/users/#{category.user_id}"
 end
 
 
