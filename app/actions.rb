@@ -80,6 +80,13 @@ get '/' do
   erb :index
 end
 
+delete '/shares/:id' do |id|
+  share = Share.find(id)
+  category = share.category_id
+  share.destroy
+  redirect "/category/#{category}"
+end
+
 get '/users/:id' do |id|
   if session[:user_id]
     @the_user = User.find(id)
@@ -145,6 +152,7 @@ post '/shares/:id/create' do |id|
 
   redirect "/users/#{category.user_id}"
 end
+
 
 
 # Will delete a file from a category.
