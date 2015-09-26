@@ -134,7 +134,11 @@ end
 
 post '/shares/:id/create' do |id|
   share = Share.new
-  share.user = User.find_by(email: params[:email])
-  share.category = Category.find(id)
-  share.save
+  user = User.find_by(email: params[:email])
+  category = Category.find(id)
+  unless Share.exists?(user_id: user.id, category_id: category.id)
+    share.user = user
+    share.category = category
+    share.save
+  end
 end
