@@ -1,15 +1,19 @@
 <% if @user.id == @the_user.id %>
   <h1>My categories</h1>
   <% @the_user.categories.each do |category| %>  
-    <div class="container">
-      <a href="/category/<%= category.id %>">
-        <div class="row bg-info">
-          <p class="text-center"><%= category.name %>
-            <button class="btn btn-danger pull-right">Delete</button>
-          </p>
-        </div>
-      </a>
-    </div>
+    <div class="category-container container">
+    <div class="row">
+      <div class = "col-sm-4">
+        <a href = "/category/<%= category.id %>"><%= category.name %></a>
+      </div>
+      <div class = "delete-button">
+          <form class = "delete-button" onsubmit="return confirm('Confirm category delete?')"action="/category/<%=  category.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-sm btn-danger">Delete </button>
+          </form>    
+      </div>
+    </div> 
+  </div>  
     <br>
   <% end %>
 

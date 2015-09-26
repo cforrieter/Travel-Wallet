@@ -9,7 +9,9 @@
   <% @category.documents && @category.documents.each do |doc| %>
   <div class="file col-sm-3">
     <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
-    <a href="<%= doc.file %>"><%= File.basename(doc['file']) %></a>
+
+    <h5 class="doc_file"><%= doc.file %></h5>
+    
   </div>
   <% end %>
 </div>
