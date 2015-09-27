@@ -5,4 +5,4 @@ $('.carousel').slick({
   arrows: false,
   buttons: false
 });
-
+});
