@@ -14,6 +14,8 @@ require 'carrierwave/orm/activerecord'
 require 'pry'
 require 'bcrypt'
 
+
+
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 APP_NAME = APP_ROOT.basename.to_s
 
@@ -21,7 +23,7 @@ APP_NAME = APP_ROOT.basename.to_s
 configure do
   set :root, APP_ROOT.to_path
   set :server, :puma
-
+  set :method_override, true
   enable :sessions
   set :session_secret, ENV['SESSION_KEY'] || 'lighthouselabssecret'
 
