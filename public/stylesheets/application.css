@@ -46,33 +46,27 @@ nav .brand {float: left;}
   top: -20%;
   right: 0;
   left: 0;
-  /*background: url('../images/IMG_3073.jpg') rgb(50, 50, 50) 50% 100%;*/
   position: absolute;
   background-size: cover;
   color: rgb(255,255,255);
- /* height: 30em;
-  padding: 1em;*/
   position: absolute;
   }
 
 .jumbotron header {
   text-align: center;
   left: 0;
-  position: relative;
   right: 0;
   top: o;
-  width: 1800px;
+  width: 1440px;
   height: 300px;
   transform: translateY(-50);
 }
-/*<div id="slider1_container" style="position: relative; top: -48px; left: 0px; width: 1000px; height: 300px;">*/
 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 #main {
   margin-top: 5em;
@@ -102,7 +96,9 @@ p#blurb {
 }
 
 body {
-  background: #eee !important;  
+  /*background: #eee !important;*/
+  background: url('../images/bedge_grunge_@2X.png');
+}
 }
 
 .wrapper {  
@@ -184,6 +180,7 @@ body {
 
 .documents {
   margin-top: 2em;
+  font-size: 2em;
 }
 
 .documents a {
@@ -200,9 +197,23 @@ body {
 }
 
 .side-nav {
+  position: absolute;
+  left: 30px;
   width: 20%;
 }
 
+/*Mary's styling for files page*/
 .main-content {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height:0;
   width: 80%;
 }
+
+.add-file {
+  position: relative;
+  text-align: center;
+}
+
+
