@@ -84,6 +84,7 @@ h1#call {
   font-family: 'Montserrat', sans-serif;
   font-style: bold;  
   color: rgb(255,255,255);  
+  text-shadow: 4px 0px 7px rgba(0, 0, 0, 1);
 }
 
 h1#hook {
@@ -98,7 +99,8 @@ p {
 }
 
 p#blurb {
-  color: rgb(255,255,255)
+  color: rgb(255,255,255);
+  text-shadow: 4px 0px 7px rgba(0, 0, 0, 1);
 }
 
 body {
