@@ -1,15 +1,4 @@
-<div class="side-nav pull-left">
-  <h4>Main page</h4>
-    <a href="/users/<%= @user.id %>"><p><%= @user.first_name %></p></a>
-  <h5>Your Connections</h5>
-  
-    <% @user.connections.each do |connection| %>
-      <p>
-        <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
-      </p>
-    <% end %>
-  </ul>
-</div>
+<%= erb :'_sidebar' %>
 
 <div class="main-content pull-right">
 

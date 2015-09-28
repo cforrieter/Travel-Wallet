@@ -1,34 +1,23 @@
+<%= erb :_sidebar %>
 
-<div class="container">
-  <div class="side-nav pull-left">
-    <h4>My Account</h4>
-      <a href="/users/<%= @user.id %>"><p class=><%= @user.first_name %></p></a>
-    <h5>Your Connections</h5>
-    <ul>
-      <% @user.connections.each do |connection| %>
-        <li>
-          <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="main-content pull-right">
+<div class="main-content pull-right">
     <div class="container">
-    <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">
+    <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data">
       <input type="file" name="files[]" multiple required>
-      <button class="btn btn-success" type="button" name="action">Add file
+      <button class="btn btn-success" type="submit" name="action">Add file
       </button>
     </form>
-
-<!-- btn waves-effect waves-light -->
     
   <div class="documents"> 
     <% @category.documents && @category.documents.each do |doc| %>
-      <div class="file col-sm-3">
-        <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
-
-        <a href="<%= doc.file.url %>"><%= doc.file %></a>
+    <% name, type = doc.file.url.match(/\/\w+\/(\w+)(?:\.(\w+))?/).captures %>
+      <div class="file col-sm-4">
+        <% if type == 'jpg' %>
+          <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
+        <% elsif type == 'pdf' %>
+          <img src="http://www.agtphotomount.com/PDF-logo.png" />
+        <% end %>
+        <a href="<%= doc.file.url %>"><%= name %></a>
         
       </div>
       <% end %>
