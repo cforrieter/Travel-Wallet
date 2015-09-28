@@ -18,7 +18,10 @@
           <img src="http://www.agtphotomount.com/PDF-logo.png" />
         <% end %>
         <a href="<%= doc.file.url %>"><%= name %></a>
-        
+        <form class="delete-button" onsubmit="return confirm('Confirm category delete?')" action="/document/<%= doc.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+        </form>
       </div>
       <% end %>
     </div>

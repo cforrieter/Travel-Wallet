@@ -159,7 +159,7 @@ end
 
 
 # Will delete a file from a category.
-delete 'document/:id/destroy/' do |id|
+delete '/document/:id' do |id|
   document = Document.find(id)
   category_id = document.category.id
   document.destroy
