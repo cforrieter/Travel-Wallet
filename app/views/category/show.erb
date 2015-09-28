@@ -1,16 +1,18 @@
 <%= erb :_sidebar %>
 
 <div class="main-content pull-right">
-    <div class="container">
-    <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">Step 1: Choose a file
-    <br>
-      <input type="file" name="files[]" multiple required>
+    <% if @user.id == @category.user_id %>
+      <div class="container">
+      <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">Step 1: Choose a file
       <br>
-      Step 2: Add this file 
-      <br>
-      <button class="btn btn-success" type="submit" name="action">Add file
-      </button>
-    </form>
+        <input type="file" name="files[]" multiple required>
+        <br>
+        Step 2: Add this file 
+        <br>
+        <button class="btn btn-success" type="submit" name="action">Add file
+        </button>
+      </form>
+    <% end %>  
     
   <div class="documents"> 
     <% @category.documents && @category.documents.each do |doc| %>
@@ -24,10 +26,12 @@
          <img src="../images/doc-icon.png" />
        <% end %><br>
        <a href="<%= doc.file.url %>"><%= name %></a>
+       <% if @user.id == @category.user_id %>
     <form class="delete-button" onsubmit="return confirm('Confirm file delete?')" action="/document/<%= doc.id %>" method="POST">
     <input type="hidden" name="_method" value="DELETE">
     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
     </form>
+    <% end %>
      </div>
      <% end %>
     </div>

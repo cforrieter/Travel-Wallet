@@ -7,7 +7,7 @@
   <% @user.categories.each do |category| %>
         <div class="container category-container">
         <div class="row">
-        <a class="category-name" href="/category/<%= category.id %>">
+           <a class="category-name" href="/category/<%= category.id %>">
              <div class="btn btn-primary btn-lg btn-block col-sm-2">
               <h2 class="text-uppercase"><%= category.name %></h2>
              </div>
@@ -61,23 +61,30 @@
   <div class="container">
     <h1><%= @the_user.first_name %>'s shared categories</h1>
     <% @shares.each do |share| %>
-      <div><a href="/category/<%= share.category.id %>"><%= share.category.name %></a></div>
+    <div class="container category-container">
+      <a class="category-name" href="/category/<%= share.category.id %>">
+       <div class="btn btn-primary btn-lg btn-block col-sm-2">
+        <h2 class="text-uppercase"><%= share.category.name %></h2>
+       </div>
+     </a>
+     </div>
     <% end %>  
   </div>
 <% end %>
 
 </div>
-
+<% if @user.id == @the_user.id %>
 <div class="container">
-        <div class="new-cat">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="/category/create" method="POST">
-                      <label for="NewCategory"><p class="cat-heading">New Category</p></label>
-                      <input type="text" class="form-control" name="name" id="CategoryName" placeholder="Name">
-                      <button type="submit" class="btn btn-success">New Category</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="new-cat">
+      <div class="row">
+          <div class="col-md-12">
+              <form action="/category/create" method="POST">
+                <label for="NewCategory"><p class="cat-heading">New Category</p></label>
+                <input type="text" class="form-control" name="name" id="CategoryName" placeholder="Name">
+                <button type="submit" class="btn btn-success">New Category</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+<% end %>
