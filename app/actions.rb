@@ -152,7 +152,7 @@ post '/shares/:id/create' do |id|
     share.category = category
     share.save
   end
-
+  
   redirect "/users/#{category.user_id}"
 end
 
