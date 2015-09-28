@@ -1,19 +1,6 @@
+<%= erb :_sidebar %>
 
-<div class="container">
-  <div class="side-nav pull-left">
-    <h4>My Account</h4>
-      <a href="/users/<%= @user.id %>"><p class=><%= @user.first_name %></p></a>
-    <h5>Your Connections</h5>
-    <ul>
-      <% @user.connections.each do |connection| %>
-        <li>
-          <a href="/users/<%= User.find(connection.user_id).id %>"><%= User.find(connection.user_id).first_name %></a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="main-content pull-right">
+<div class="main-content pull-right">
     <div class="container">
     <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">Step 1: Choose a file
     <br>
@@ -24,8 +11,6 @@
       <button class="btn btn-success" type="submit" name="action">Add file
       </button>
     </form>
-
-<!-- btn waves-effect waves-light -->
     
   <div class="documents"> 
     <% @category.documents && @category.documents.each do |doc| %>
