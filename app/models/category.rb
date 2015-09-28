@@ -4,6 +4,8 @@ class Category < ActiveRecord::Base
   has_many :shares
   has_many :documents
 
+validates :name, length: {maximum: 21}
+
   def hash
     self.user_id
   end
