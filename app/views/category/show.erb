@@ -15,9 +15,13 @@
 
   <div class="main-content pull-right">
     <div class="container">
-    <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">
+    <form action="/category/<%= @category.id %>/document/new" method="post" enctype="multipart/form-data" class="add-file">Step 1: Choose a file
+    <br>
       <input type="file" name="files[]" multiple required>
-      <button class="btn btn-success" type="button" name="action">Add file
+      <br>
+      Step 2: Add this file 
+      <br>
+      <button class="btn btn-success" type="submit" name="action">Add file
       </button>
     </form>
 
@@ -25,13 +29,22 @@
     
   <div class="documents"> 
     <% @category.documents && @category.documents.each do |doc| %>
-      <div class="file col-sm-3">
-        <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
-
-        <a href="<%= doc.file.url %>"><%= doc.file %></a>
-        
-      </div>
-      <% end %>
+   <% name, type = doc.file.url.match(/\/\w+\/(\w+)(?:\.(\w+))?/).captures %>
+     <div class="file col-sm-4">
+       <% if type == 'jpg' %>
+         <img src="../images/JPEG-icon.png" aria-hidden="true"/>
+       <% elsif type == 'pdf' %>
+         <img src="../images/PDF-icon.png" />
+         <% else %>
+         <img src="../images/doc-icon.png" />
+       <% end %><br>
+       <a href="<%= doc.file.url %>"><%= name %></a>
+    <form class="delete-button" onsubmit="return confirm('Confirm file delete?')" action="/document/<%= doc.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+    </form>
+     </div>
+     <% end %>
     </div>
   </div>
 </div>  
