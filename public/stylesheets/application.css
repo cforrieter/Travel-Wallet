@@ -226,8 +226,8 @@ input[type='file'] {
 
 /*Mary's styling for files page*/
 .main-content { 
-  position: relative;
-  margin-left: 10%;
+  position: absolute;
+  margin-left: 20%;
   height: 0; 
 }
 
