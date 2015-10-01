@@ -26,11 +26,6 @@ post '/user/new' do
 end
 
 
-# login page
-get '/login' do
- erb :login
-end
-
 # Login verificaton
 post '/login' do
  email = params[:email]
