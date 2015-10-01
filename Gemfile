@@ -16,13 +16,11 @@ gem 'json'
 
 gem 'carrierwave'
 
-group :production do
-  gem 'pg'
-end
+
+gem 'pg'
 
 group :development, :test do
   gem 'byebug'
   gem 'shotgun'
-  gem 'pg'
 end
 
