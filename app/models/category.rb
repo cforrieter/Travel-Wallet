@@ -4,8 +4,10 @@ class Category < ActiveRecord::Base
   has_many :shares
   has_many :documents
 
-validates :name, length: {maximum: 21}
+  validates :name, length: {maximum: 21}
 
+
+  #Overload hash and eql? methods to use .uniq 
   def hash
     self.user_id
   end

@@ -89,8 +89,11 @@ end
 
 get '/users/:id' do |id|
   if session[:user_id]
-    @the_user = User.find(id)
-    @shares = Share.find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
+    @the_user = User.includes(:categories).find(id)
+    #Find all the shares the logged in user made with other people
+    @shared_with_others = Share.includes(:category).find_by_sql(["SELECT s.* FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE c.user_id = ?", @the_user.id])  
+    #Get all the shares that belong to the logged in user
+    @shares = Share.includes(:categories).find_by_sql(["SELECT * FROM shares as s JOIN categories as c ON s.category_id = c.id WHERE s.user_id = ? AND c.user_id = ?", @user.id, @the_user.id])  
     if @user.id === @the_user.id || !@shares.empty?
       erb :'users/index'
     else
@@ -101,10 +104,6 @@ get '/users/:id' do |id|
     redirect '/'
   end
 end
-
-# get '/category/show' do
-#   erb :'category/show'
-# end
 
 get '/category/:id' do |id|
   if session[:user_id]

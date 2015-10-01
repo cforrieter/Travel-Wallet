@@ -4,7 +4,7 @@
 
 <% if @user.id == @the_user.id %>
   <h1>My Categories</h1>
-  <% @user.categories.each do |category| %>
+  <% @the_user.categories.each do |category| %>
         <div class="container category-container">
         <div class="row">
            <a class="category-name" href="/category/<%= category.id %>">
@@ -21,13 +21,12 @@
                   </form>
                 </div>
               <div class="col-sm-3">
-               <!-- Single button -->
               <div class="btn-group">
                 <button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   See connections <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                <% shares = Share.where(category_id: category.id) %>
+                <% shares = @shared_with_others.select { |share| share.category_id == category.id } %>
                 <% if shares.length > 0 %>
                   <% shares.each do |share| %>
                           <li>
@@ -53,10 +52,6 @@
         </div>
       </div> 
     <% end %>
-
-
-
-  
 <% else %>
   <div class="container">
     <h1><%= @the_user.first_name %>'s shared categories</h1>
