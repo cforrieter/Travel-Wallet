@@ -10,8 +10,6 @@ require 'sinatra/contrib/all' # Requires cookies, among other things
 require 'carrierwave'
 require 'carrierwave/orm/activerecord'
 
-
-require 'pry'
 require 'bcrypt'
 
 

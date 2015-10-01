@@ -16,9 +16,12 @@ gem 'json'
 
 gem 'carrierwave'
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
-  gem 'pry'
-  # gem 'pry-nav'
+  gem 'byebug'
   gem 'shotgun'
   gem 'pg'
 end
